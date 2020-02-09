@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 
@@ -20,48 +21,158 @@ class _InputPageState extends State<InputPage> {
       appBar: AppBar(
 
         title: Text(
-            'Viable',
+            'VIABLE',
         textAlign: TextAlign.center,
 
         style: GoogleFonts.quicksand(fontWeight: FontWeight.bold, fontSize: 40.0, color: Colors.white)),
       ),
-      body: Column(
-        children: <Widget>[
-          Expanded( flex: 4, child: ReusableCard(
-          cardChild: Column(
-            
-          ))),
-          Expanded(flex: 3,child:Row(
-            children: <Widget>[
-              Expanded(flex:3, child: ReusableCard("")),
-              Expanded(flex: 1, child: Column(children: <Widget>[
-                Expanded( child: ReusableCard("+")),
-                Expanded( child: ReusableCard("-")),
-              ],),),
-              Expanded(flex:1, child: ReusableCard("0"))],
-          )),
-          Expanded(flex: 3,child:Row(
-            children: <Widget>[
-              Expanded(flex:3, child: ReusableCard("Medium")),
-              Expanded(flex: 1, child: Column(children: <Widget>[
-                Expanded( child: ReusableCard("+")),
-                Expanded( child: ReusableCard("-")),
-              ],),),
-              Expanded(flex:1, child: ReusableCard("0")),],
-          )),
-          Expanded(flex: 3,child:Row(
-            children: <Widget>[
-              Expanded(flex:3, child: ReusableCard("Small")),
-              Expanded(flex: 1, child: Column(children: <Widget>[
-                Expanded( child: ReusableCard("+")),
-                Expanded( child: ReusableCard("-")),
-              ],),),
+      body: Center(
+        child: Column(
+          children: <Widget>[
+            Expanded( flex: 4, child: ReusableCard(Row(
+              children: <Widget>[
+                Text(
+                    "Boxes to Drop:", style: GoogleFonts.quicksand(fontWeight: FontWeight.bold,fontSize:20, color: Colors.white),
+                  textAlign: TextAlign.center,
+                ),
+                Image.asset('images/box.png', scale: .5),
+              ],
+            )),),
+            Expanded(flex: 3,child:Row(
+              children: <Widget>[
+                Expanded(flex:3, child: ReusableCard(Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Text(
+                      "Large", style: GoogleFonts.quicksand(fontWeight: FontWeight.bold,fontSize:50, color: Colors.white),
+                    )
+                  ],
+                ))),
+                Expanded(flex: 1, child: Column(children: <Widget>[
+                  Expanded( child: ReusableCard(Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      Icon( FontAwesomeIcons.plusCircle,
+                        size: 50.0,
+                        color: Color(0xffa5d6a7),
+                      ),
+                    ],
+                  ))),
+                  Expanded( child: ReusableCard(Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      Icon( FontAwesomeIcons.minusCircle,
+                        size: 50.0,
+                        color: Color(0xffa5d6a7),
+                      ),
 
-              Expanded(flex:1, child: ReusableCard("0")),],
-          )
-          ),
-          Expanded( flex: 2, child: ReusableCard("Finish")),
-        ],
+                    ],
+                  ))),
+                ],),),
+                Expanded(flex:1, child: ReusableCard(Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Text(
+                      "0", style: GoogleFonts.quicksand(fontWeight: FontWeight.bold,fontSize:40, color: Colors.white),
+                    )
+                  ],
+                )))],
+            )),
+            Expanded(flex: 3,child:Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                Expanded(flex:3, child: ReusableCard(Column(
+
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Text(
+                      "Medium", style: GoogleFonts.quicksand(fontWeight: FontWeight.bold,fontSize:50, color: Colors.white),
+                    )
+                  ],
+                ))),
+                Expanded(flex: 1, child: Column(children: <Widget>[
+                  Expanded( child: ReusableCard(Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      Icon( FontAwesomeIcons.plusCircle,
+                        size: 50.0,
+                        color: Color(0xffa5d6a7),
+                      ),
+                    ],
+                  ))),
+                  Expanded( child: ReusableCard(Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      Icon( FontAwesomeIcons.minusCircle,
+                        size: 50.0,
+                        color: Color(0xffa5d6a7),
+                      ),
+
+                    ],
+                  ))),
+                ],),),
+                Expanded(flex:1, child: ReusableCard(Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Text(
+                      "0", style: GoogleFonts.quicksand(fontWeight: FontWeight.bold,fontSize:50, color: Colors.white),
+                    )
+                  ],
+                ))),],
+            )),
+            Expanded(flex: 3,child:Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                Expanded(flex:3, child: ReusableCard(Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Text(
+                      "Small", style: GoogleFonts.quicksand(fontWeight: FontWeight.bold,fontSize:40, color: Colors.white),
+                    )
+                  ],
+                ))),
+                Expanded(flex: 1, child: Column(children: <Widget>[
+                  Expanded( child: ReusableCard(Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      Icon( FontAwesomeIcons.plusCircle,
+                        size: 50.0,
+                        color: Color(0xffa5d6a7),
+                      ),
+                    ],
+                  ))),
+                  Expanded( child: ReusableCard(Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      Icon( FontAwesomeIcons.minusCircle,
+                        size: 50.0,
+                        color: Color(0xffa5d6a7),
+                      ),
+
+                    ],
+                  ))),
+                ],),),
+
+                Expanded(flex:1, child: ReusableCard(Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Text(
+                      "0", style: GoogleFonts.quicksand(fontWeight: FontWeight.bold,fontSize:50, color: Colors.white),
+                    )
+                  ],
+                ))),],
+            )
+            ),
+            Expanded( flex: 2, child: ReusableCard(Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                Text(
+                  "Finish...", style: GoogleFonts.quicksand(fontStyle: FontStyle.italic, fontWeight: FontWeight.bold,fontSize:40, color: Colors.white),
+                )
+              ],
+            ))),
+          ],
+        ),
       )
     );
   }
@@ -74,6 +185,7 @@ class ReusableCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+
       child: cardChild,
       margin: EdgeInsets.all(5),
       decoration: BoxDecoration(
