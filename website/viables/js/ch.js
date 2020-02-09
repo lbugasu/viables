@@ -2,7 +2,9 @@
 var x = 0;
 var y = 0;
 var z = 0;
-var span = document.querySelector('span'); // find the <span> element in the DOM
+var span1 = document.querySelector("#x"); // find the <span> element in the DOM
+var span2 = document.querySelector("#y"); // find the <span> element in the DOM
+var span3 = document.querySelector("#z"); // find the <span> element in the DOM
 var incrementb = document.getElementById('incrementb'); // find the element with the ID 'increment'
 var decrementb = document.getElementById('decrementb'); // find the element with the ID 'decrement'
 var incrementm = document.getElementById('incrementm'); // find the element with the ID 'increment'
@@ -13,47 +15,47 @@ var decrements = document.getElementById('decrements'); // find the element with
 incrementb.addEventListener('click', function () {
   // this function is executed whenever the user clicks the increment button
   if(x<20){
-  	span.textContent = ++x;
+  	span1.textContent = ++x;
   }
 });
 
 decrementb.addEventListener('click', function () {
   // this function is executed whenever the user clicks the decrement button
   if(x>0){
-  	span.textContent = --x;
+  	span1.textContent = --x;
   }
 });
 
 incrementm.addEventListener('click', function () {
   // this function is executed whenever the user clicks the increment button
   if(y<20){
-  	span.textContent = ++y;
+  	span2.textContent = ++y;
   }
 });
 
 decrementm.addEventListener('click', function () {
   // this function is executed whenever the user clicks the decrement button
   if(y>0){
-  	span.textContent = --y;
+  	span2.textContent = --y;
   }
 });
 
 increments.addEventListener('click', function () {
   // this function is executed whenever the user clicks the increment button
   if(z<20){
-  	span.textContent = ++z;
+  	span3.textContent = ++z;
   }
 });
 
 decrements.addEventListener('click', function () {
   // this function is executed whenever the user clicks the decrement button
   if(z>0){
-  	span.textContent = --z;
+  	span3.textContent = --z;
   }
 });
 
 function printx(){
-  document.getElementById("showx").innerHTML = "You will be credited with " + x*15+y*10+z*5 + " points once you scan the unique QR code at the carton drop-off center!";
+  document.getElementById("showx").innerHTML = "You will be credited with " + (x*15+y*10+z*5) + " points once you scan the unique QR code at the carton drop-off center!";
 }
 
 function showlocation() {

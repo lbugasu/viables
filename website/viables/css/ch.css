@@ -7,8 +7,9 @@
 body {
   padding-top: 56px;
   /* background-image: url(img/img6.jpg); */
-  background-color: #28a74559;
-  background-blend-mode: lighten;
+ /*  background-color: #28a74559; */
+     background-color: #fff;
+     background-blend-mode: lighten;
   font-family: sans-serif;
 }
 
