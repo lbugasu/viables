@@ -8,13 +8,7 @@
 
 **[View Live Preview](https://blackrockdigital.github.io/startbootstrap-shop-homepage/)**
 
-## Status
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-shop-homepage/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-shop-homepage.svg)](https://www.npmjs.com/package/startbootstrap-shop-homepage)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-shop-homepage.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-shop-homepage)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-shop-homepage/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-shop-homepage)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-shop-homepage/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-shop-homepage?type=dev)
 
 ## Download and Installation
 
