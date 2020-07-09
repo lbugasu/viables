@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
     <title>Viables</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
-    <link href="css/ch.css" rel="stylesheet">
+    <link href="css/ch.css" rel="stylesheet" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
   </head>
 
   <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="./index.html">Viables</a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-
-          </ul>
+          <ul class="navbar-nav ml-auto"></ul>
         </div>
       </div>
     </nav>
 
-
     <!-- Page Content -->
     <div class="container">
-
       <label for="college">Choose a college:</label>
       <select id="college" onchange="showlocation()">
-    		<option value="New York University">New York University</option>
-    		<option value="North Carolina Wesleyan College">North Carolina Wesleyan College</option>
-    		<option value="rit">Rochester Institute of Technology (Please select this!)</option>
-    		<option value="University of Waterloo">University of Waterloo</option>
-  	</select>
+        <option value="New York University">New York University</option>
+        <option value="North Carolina Wesleyan College"
+          >North Carolina Wesleyan College</option
+        >
+        <option value="rit"
+          >Rochester Institute of Technology (Please select this!)</option
+        >
+        <option value="University of Waterloo">University of Waterloo</option>
+      </select>
       <a href="#box" onclick="map1()">
         <p id="location1"></p>
       </a>
@@ -54,92 +53,101 @@
       <a href="#box" onclick="map3()">
         <p id="location3"></p>
       </a>
-      
+
       <p id="map1"></p>
       <p id="map2"></p>
       <p id="map3"></p>
 
       <div id="box">
-        <img src="img/big.png" alt="Big Box" style="" width="250">
+        <img src="img/big.png" alt="Big Box" style="" width="250" />
         <button id="incrementb">+</button>
         <span id="x">0</span>
         <button id="decrementb">-</button>
-        
 
         <!-- Modal -->
         <div class="modal" id="myModal" role="dialog">
           <div class="modal-dialog">
-
             <!-- Modal content-->
             <div class="modal-content">
               <div class="modal-body">
                 <p id="showx"></p>
-                <img src="img/img5.png" alt="Medium Box" style="">
-
+                <img src="img/img5.png" alt="Medium Box" style="" />
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button
+                  type="button"
+                  class="btn btn-default"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
               </div>
             </div>
-
           </div>
         </div>
-        <img src="img/medium.png" alt="Medium Box" style="" width="250">
+        <img src="img/medium.png" alt="Medium Box" style="" width="250" />
         <button id="incrementm">+</button>
         <span id="y">0</span>
         <button id="decrementm">-</button>
 
-
         <!-- Modal -->
         <div class="modal" id="myModal" role="dialog">
           <div class="modal-dialog">
-
             <!-- Modal content-->
             <div class="modal-content">
               <div class="modal-body">
                 <p id="showx"></p>
-                <img src="img/img5.png" alt="Medium Box" style="">
-
+                <img src="img/img5.png" alt="Medium Box" style="" />
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button
+                  type="button"
+                  class="btn btn-default"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
               </div>
             </div>
-
           </div>
         </div>
-        <img src="img/small.png" alt="Small Box" style="" width="250">
+        <img src="img/small.png" alt="Small Box" style="" width="250" />
         <button id="increments">+</button>
         <span id="z">0</span>
         <button id="decrements">-</button>
-        <button type="button" class="btn btn-dark" onclick="printx()" style="border-radius:20px;" data-toggle="modal" data-target="#myModal">Calculate your Credit Points</button>
+        <button
+          type="button"
+          class="btn btn-dark"
+          onclick="printx()"
+          style="border-radius: 20px;"
+          data-toggle="modal"
+          data-target="#myModal"
+        >
+          Calculate your Credit Points
+        </button>
 
         <!-- Modal -->
         <div class="modal" id="myModal" role="dialog">
           <div class="modal-dialog">
-
             <!-- Modal content-->
             <div class="modal-content">
               <div class="modal-body">
                 <p id="showx"></p>
-                <img src="img/img5.png" alt="Medium Box" style="">
-
+                <img src="img/img5.png" alt="Medium Box" style="" />
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button
+                  type="button"
+                  class="btn btn-default"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
               </div>
             </div>
-
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
     </div>
 
     <!-- /.container -->
@@ -154,34 +162,25 @@
         <span>Design and Coded with <span><i class="fa fa-heart" style="color:red !important;"></i></span></span>
         </footer> -->
     <script src="js/ch.js"></script>
-
-
-
   </body>
-
 
   <!-- Bootstrap core JavaScript -->
 
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript">
-    $(document).ready(function() {
-      $('#box').hide();
+    $(document).ready(function () {
+      $("#box").hide();
     });
 
-    $('#location1').click(function() {
-      $('#box').show();
+    $("#location1").click(function () {
+      $("#box").show();
     });
-    $('#location2').click(function() {
-      $('#box').show();
+    $("#location2").click(function () {
+      $("#box").show();
     });
-    $('#location3').click(function() {
-      $('#box').show();
+    $("#location3").click(function () {
+      $("#box").show();
     });
-
   </script>
-
-
-
-
 </html>
